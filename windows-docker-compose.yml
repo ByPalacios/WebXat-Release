@@ -1,0 +1,12 @@
+version: '3'
+services:
+  webxat-base:
+    image: webxat-base:staging
+    container_name: webxat-base
+    #network_mode: "host"
+    volumes:
+      - ./App:/usr/src/app
+    ports:
+      - "3000:3000"
+
+
