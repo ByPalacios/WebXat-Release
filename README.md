@@ -9,6 +9,22 @@ The webapp is built with Node.js and Socket.io inside Docker containers.
 
 **Server:** Node.js, Express, Nodemon, Socket.io, mysql, CookieParser, ExpressSession
 
+## Images:
+
+### Design:
+![image (2)](https://github.com/ByPalacios/WebXat-Release/assets/85448829/97988609-7dee-4666-b096-e2c8c6b44077)
+![image](https://github.com/ByPalacios/WebXat-Release/assets/85448829/381ec55a-fb72-4c65-bc98-71aa7341b717)
+![Captura de pantalla 2023-06-01 134114](https://github.com/ByPalacios/WebXat-Release/assets/85448829/25e25fe7-62ba-4b63-8eeb-4d31e193544b)
+
+### Gifs Animation:
+![Vídeo sin título ‐ Hecho con Clipchamp (2)](https://github.com/ByPalacios/WebXat-Release/assets/85448829/3aadda52-9a78-40a3-b7ba-cfaea77a58a3)
+
+### Search Tool:
+![Vídeo sin título ‐ Hecho con Clipchamp (3)](https://github.com/ByPalacios/WebXat-Release/assets/85448829/b7d4a8e0-c643-4168-8c92-76695f8a6bef)
+
+### Adding an Image:
+![Vídeo sin título ‐ Hecho con Clipchamp (4)](https://github.com/ByPalacios/WebXat-Release/assets/85448829/fc003c69-a6fe-4152-9ecf-dba9caceb8c7)
+
 ## Pre-Requisites
 
 It is necessary to have docker and python installed for the correct functioning of the container construction.
