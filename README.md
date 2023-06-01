@@ -12,18 +12,18 @@ The webapp is built with Node.js and Socket.io inside Docker containers.
 ## Images:
 
 ### Design:
-![image (2)](https://github.com/ByPalacios/WebXat-Release/assets/85448829/97988609-7dee-4666-b096-e2c8c6b44077)
-![image](https://github.com/ByPalacios/WebXat-Release/assets/85448829/381ec55a-fb72-4c65-bc98-71aa7341b717)
-![Captura de pantalla 2023-06-01 134114](https://github.com/ByPalacios/WebXat-Release/assets/85448829/25e25fe7-62ba-4b63-8eeb-4d31e193544b)
+![image (2)](https://github.com/ByPalacios/WebXat-Release/blob/d958d8d924312e6b4fab3e5cf40915962dae0071/readme/login.png)
+![image](https://github.com/ByPalacios/WebXat-Release/blob/d958d8d924312e6b4fab3e5cf40915962dae0071/readme/register.png)
+![Captura de pantalla 2023-06-01 134114](https://github.com/ByPalacios/WebXat-Release/blob/d958d8d924312e6b4fab3e5cf40915962dae0071/readme/chat-design.png)
 
 ### Gifs Animation:
-![Vídeo sin título ‐ Hecho con Clipchamp (2)](https://github.com/ByPalacios/WebXat-Release/assets/85448829/3aadda52-9a78-40a3-b7ba-cfaea77a58a3)
+![Vídeo sin título ‐ Hecho con Clipchamp (2)](https://github.com/ByPalacios/WebXat-Release/blob/d958d8d924312e6b4fab3e5cf40915962dae0071/readme/gif-animation.gif)
 
 ### Search Tool:
-![Vídeo sin título ‐ Hecho con Clipchamp (3)](https://github.com/ByPalacios/WebXat-Release/assets/85448829/b7d4a8e0-c643-4168-8c92-76695f8a6bef)
+![Vídeo sin título ‐ Hecho con Clipchamp (3)](https://github.com/ByPalacios/WebXat-Release/blob/d958d8d924312e6b4fab3e5cf40915962dae0071/readme/search-tool.gif)
 
 ### Adding an Image:
-![Vídeo sin título ‐ Hecho con Clipchamp (4)](https://github.com/ByPalacios/WebXat-Release/assets/85448829/fc003c69-a6fe-4152-9ecf-dba9caceb8c7)
+![Vídeo sin título ‐ Hecho con Clipchamp (4)](https://github.com/ByPalacios/WebXat-Release/blob/d958d8d924312e6b4fab3e5cf40915962dae0071/readme/file-upload.gif)
 
 ## Pre-Requisites
 
