@@ -1,26 +1,24 @@
 # WebApp
 
-Aplicació web de missatgeria online instantania.
-La webapp esta construida amb Node.js i Socket.io dins de contenidors Docker.
+Instant online messaging webapp.
+The webapp is built with Node.js and Socket.io inside Docker containers.
 
-## Estructura Contenidors
+## Container structure
 
 **Client:** Node.js, Express, Nodemon, Socket.io-Cli,
 
 **Server:** Node.js, Express, Nodemon, Socket.io, mysql, CookieParser, ExpressSession
 
-## Pre-Requisits
+## Pre-Requisites
 
-Es necessari tenir instal·lat docker i python per el correcte funcionament de la contrucció dels contenidors.
+It is necessary to have docker and python installed for the correct functioning of the container construction.
 
 ```bash
   sudo apt install docker python
-  git clone https://github.com/ByPalacios/WebXat.git
+  git clone https://github.com/ByPalacios/WebXat-Release
 ```
 
-## Instal·lació
-
-Es necessari tenir instal·lat docker i python per el correcte funcionament de la contrucció dels contenidors.
+## Installation
 
 ### For Windows:
 
@@ -38,18 +36,18 @@ Es necessari tenir instal·lat docker i python per el correcte funcionament de l
 
 # Color Reference
 
-| Color       | Hex                                                              |
-| ----------- | ---------------------------------------------------------------- |
-| Lila Clar   | ![#9B00FF](https://via.placeholder.com/10/9B00FF?text=+) #9B00FF |
-| Lila Fosc   | ![#7500C0](https://via.placeholder.com/10/7500C0?text=+) #7500C0 |
-| Gris Oscur  | ![#282c34](https://via.placeholder.com/10/282c34?text=+) #282c34 |
-| Shadow Gray | ![#595959](https://via.placeholder.com/10/595959?text=+) #595959 |
+| Color        | Hex                                                              |
+| ------------ | ---------------------------------------------------------------- |
+| Light Purple | ![#9B00FF](https://via.placeholder.com/10/9B00FF?text=+) #9B00FF |
+| Dark Purple  | ![#7500C0](https://via.placeholder.com/10/7500C0?text=+) #7500C0 |
+| Dark Gray    | ![#282c34](https://via.placeholder.com/10/282c34?text=+) #282c34 |
+| Shadow Gray  | ![#595959](https://via.placeholder.com/10/595959?text=+) #595959 |
 
-# Documentació
+# Documentation
 
 ## Add Data Firebase Database Template
 
-### Afegir un document a la BD de Firebase
+### Adding a document to the Firebase DB
 
 ```js
 import { doc, setDoc } from "firebase/firestore";
@@ -62,7 +60,7 @@ await setDoc(doc(db, "cities", "LA"), {
 });
 ```
 
-### Tipus de dades que es poden inserir a la DB i com
+### Types of data that can be entered in the DB and how to enter them
 
 ```js
 import { doc, setDoc, Timestamp } from "firebase/firestore";
@@ -120,19 +118,20 @@ await updateDoc(cityRef, {
 });
 ```
 
-## Metodes/Functions/Accions JS | Node | React
+## Methods/Functions/Actions JS | Node | React
 
 ### UseState()
 
-#### Descripcio
+#### Description
 
 ```js
-El mètode useState() és un hook de React que us permet afegir estat a un component funcional a React. L'estat és qualsevol dada que canvia al llarg del temps i que pot afectar com es renderitza un component.
+The useState() method is a React hook that allows you to add state to a functional component in React.
+State is any data that changes over time and can affect how a component is rendered.
 
-El mètode useState() pren un valor inicial i torna una matriu que conté dos elements: el valor actual de l'estat i una funció que es fa servir per actualitzar el valor de l'estat.
+The useState() method takes an initial value and returns an array containing two elements: the current state value and a function used to update the state value.
 ```
 
-#### Declaració
+#### Declaration
 
 ```js
 import { useState } from 'react';
@@ -163,12 +162,12 @@ function EjemploComponente() {
 }
 ```
 
-**Explicació;**
+**Explanation;**
 
 ```js
-En aquest exemple, estem utilitzant useState() per afegir estat a un component funcional anomenat ExempleComponent. La matriu que es retorna conté dos elements: count, que és el valor actual de l'estat (inicialitzat a 0) i setCount, que és una funció que s'utilitza per actualitzar el valor de count.
+In this example, we are using useState() to add state to a functional component called ExempleComponent. The array returned contains two elements: count, which is the current value of the state (initialized to 0) and setCount, which is a function used to update the value of count.
 
-Quan l'usuari fa clic al botó, truquem a setCount() i li passem el nou valor de count (que és count + 1). Això actualitza l'estat i fa que React torni a renderitzar el component amb el valor de count nou.
+When the user clicks the button, we trick setCount() and pass it the new count value (which is count + 1). This updates the state and causes React to re-render the component with the new count value.
 ```
 
 **Exemple 2;**
@@ -184,19 +183,19 @@ function handleClick() {
 
 ### UseEffect()
 
-#### Descripcio
+#### Description
 
 ```js
-S'utilitza per fer efectes secundaris en components funcionals.
-Els efectes secundaris són accions que es fan fora de l'àmbit del component i que poden
-afectar l'estat de l'aplicació.
+It is used to make side effects in functional components.
+Side effects are actions that are taken out of the scope of the component and can affect the state of the application.
+affect the state of the application.
 
-El mètode useEffect() s'executa després que el component s'hagi renderitzat per primer cop
-i després de cada actualització. Pren dos arguments: una funció d'efecte i una llista de dependències opcionals.
+The useEffect() method is executed after the component has been rendered for the first time and after each update.
+and after each update. It takes two arguments: an effect function and a list of optional dependencies.
 
-La funció d'efecte és una funció que s'executarà cada cop que es renderitzi el component.
-Aquesta funció pot realitzar qualsevol acció que no afecti el renderitzat del component,
-com ara actualitzar el títol de la pàgina, fer una sol·licitud de xarxa o modificar l'estat d'altres components.
+The effect function is a function that will be executed each time the component is rendered.
+This function can perform any action that does not affect the rendering of the component,
+such as updating the page title, making a network request, or modifying the state of other components.
 ```
 
 #### Exemples;
@@ -220,26 +219,26 @@ function Example() {
 }
 ```
 
-**Explicació;**
+**Explanation;**
 
 ```js
-En aquest exemple, estem utilitzant useEffect() per actualitzar el títol
-de la pàgina amb el nombre de clics que s'han fet al botó. La funció defecte actualitza el
-títol cada vegada que canvia el valor de count. La llista de dependències [count]
-indica a React que només heu de tornar a executar la funció d'efecte si el valor de count ha canviat.
+In this example, we are using useEffect() to update the page title with the number of clicks on the button.
+of the page with the number of clicks that have been made on the button. The default function updates the
+title each time the value of count changes. The dependency list [count]
+tells React that you only need to rerun the effect function if the value of count has changed.
 ```
 
 ### UseRef()
 
-#### Descripcio
+#### Description
 
 ```js
-S'utilitza per crear una referència mutable a un element del DOM oa un valor que persisteix
-durant tota la vida del component.
+It is used to create a mutable reference to a DOM element to a value that persists for the lifetime of the component.
+throughout the life of the component.
 
-La referència es crea mitjançant la trucada a useRef() i es pot assignar a una variable.
-A continuació, es pot utilitzar aquesta variable per accedir a l'element del DOM o
-per emmagatzemar i accedir a un valor que persisteixi al llarg de les renderitzacions del component.
+The reference is created by calling useRef() and can be assigned to a variable.
+You can then use this variable to access the DOM element or
+to store and access a value that persists across renderings of the component.
 ```
 
 #### Exemples;
@@ -263,26 +262,26 @@ function EjemploComponente() {
 }
 ```
 
-**Explicació;**
+**Explanation;**
 
 ```js
-En aquest exemple, utilitzem useRef() per crear una referència a l'element de l'input.
-La referència està assignada a la variable inputRef. A continuació, utilitzem aquesta
-referència a la funció focusInput() per fer que l'input tingui el focus quan es fa clic al botó.
+In this example, we use useRef() to create a reference to the input element.
+The reference is assigned to the variable inputRef. Next, we use this
+reference to the focusInput() function to make the input have the focus when the button is clicked.
 ```
 
 ### UseContext()
 
-#### Descripcio
+#### Description
 
 ```js
-S'utilitza per accedir al context d'un component. El context és una manera de passar
-dades entre components sense haver de passar explícitament les props dun component a un altre.
+It is used to access the context of a component. Context is a way to pass
+data between components without having to explicitly pass props from one component to another.
 
-Per utilitzar el context en un component, primer cal crear un objecte de context utilitzant
-la funció createContext() de React. A continuació, podeu proporcionar un valor per defecte
-per al context utilitzant la funció Provider de l'objecte de context. Per acabar, es pot
-accedir al valor del context en qualsevol component fill utilitzant useContext().
+To use the context in a component, you must first create a context object by using the
+the createContext() function of React. Then, you can provide a default value
+for the context using the Provider function of the context object. Finally, you can
+access the value of the context in any child component using useContext().
 ```
 
 #### Exemples;
@@ -307,14 +306,14 @@ function ComponentePadre() {
 }
 ```
 
-**Explicació;**
+**Explanation;**
 
 ```js
-En este ejemplo, estamos creando un objeto de contexto MiContexto utilizando createContext()
-y proporcionando un valor predeterminado de 'valor predeterminado'. A continuación, estamos
-utilizando Provider para proporcionar un valor de 'valor del contexto' al componente hijo
-ComponenteHijo. Dentro de ComponenteHijo, estamos utilizando useContext() para acceder al
-valor del contexto y mostrarlo en un párrafo.
+In this example, we are creating a MyContext context object using createContext()
+and providing a default value of 'default'. Next, we are
+using Provider to provide a value of 'context value' to the child component
+ChildComponent. Within the ChildComponent, we are using useContext() to access the context value and display it in a
+context value and display it in a paragraph.
 ```
 
 ## Chats.jsx
@@ -322,51 +321,51 @@ valor del contexto y mostrarlo en un párrafo.
 ### OnSnapshot()
 
 ```js
-onSnapshot es una llibreria importada de firebase/firestore on agafem la db,
-i entrem a la col·lecció de userChats i agafem els chats que continguin missatges de la id del usuari.
-El currentUser es una variable, que conté la id del usuari que la agafa quan fa log in a la app.
+onSnapshot is a library imported from firebase/firestore where we take the db,
+and go into the userChats collection and grab the chats that contain messages of the user id.
+The currentUser is a variable, which contains the id of the user that is taken when logging in to the app.
 ```
 
 ### currentUser.uid && getChats();
 
 ```js
-    Si currentUser.uid és veritable, llavors la funció getChats s'anomena, el que significa que s'obtindran i actualitzaran
-    els xats de l'usuari actual a l'aplicació.
+    If currentUser.uid is true, then the getChats function is called, which means that the current user's chats will be retrieved and updated.
+    the current user's chats to the application.
 
-    Si currentUser.uid és fals (o no té un valor definit), aleshores la funció getChats no es trucarà i no es realitzarà cap
-    actualització dels xats de l'usuari a l'aplicació.
+    If currentUser.uid is false (or has no value defined), then the getChats function will not be called and no update of the user's chats to the application will be performed.
+    update of the user's chats to the application will not be performed.
 
-    En resum, aquesta línia de codi s'utilitza per garantir que els xats de l'usuari s'obtinguin només si hi ha un usuari
-    actual definit a l'aplicació.
+    In summary, this line of code is used to ensure that the user's chats are obtained only if there is a current user
+    defined to the application.
 ```
 
 ### }, [currentUser.uid]);
 
 ```bash
-    Aquest és el segon paràmetre del hook useEffect, que és una matriu de dependències.
+    This is the second parameter of the hook useEffect, which is an array of dependencies.
 
-    L'useEffect s'executarà cada cop que una de les dependències de la matriu canviï.
-    En aquest cas, la dependència és currentUser.uid, que és la identificació de lusuari actual.
+    The useEffect will be executed whenever one of the dependencies in the array changes.
+     In this case, the dependency is currentUser.uid, which is the current lusuari ID.
 
-    Això significa que cada vegada que canvieu currentUser.uid (per exemple, quan l'usuari inicia sessió o tanca sessió),
-    l'useEffect s'executarà de nou i s'actualitzaran els xats de l'usuari en conseqüència.
+    This means that every time you change currentUser.uid (for example, when the user logs in or logs out),
+    the useEffect will be executed again and the user's chats will be updated accordingly.
 
-    Quan especifiqueu aquesta dependència, l'useEffect s'executarà només quan sigui necessari, cosa que ajuda a evitar
-    trucades innecessàries a la base de dades ia millorar el rendiment de l'aplicació.
+    When you specify this dependency, the useEffect will be executed only when necessary, which helps to avoid unnecessary database calls.
+    unnecessary database calls and improve application performance.
 ```
 
 ### const handleSelect = (u) => { dispatch({ type: "CHANGE_USER", payload: u });
 
 ```
-La funció pren un paràmetre "u", que és l'usuari seleccionat, i utilitza el mètode dispatch per enviar una acció al store de Redux.
+The function takes a parameter "u", which is the selected user, and uses the dispatch method to send an action to the Redux store.
 
-L'acció té un type "CHANGE_USER" i un payload "u", que és l'usuari seleccionat.
+The action has a type "CHANGE_USER" and a payload "u", which is the selected user.
 
-Aquesta funció s'utilitza típicament en una llista d'usuaris on l'usuari pot seleccionar un usuari específic per interactuar-hi
-(per exemple, en una aplicació de missatgeria).
+This function is typically used in a list of users where the user can select a specific user to interact with
+(e.g. in a messaging application).
 
-En enviar una acció al store de Redux, s'actualitza l'estat global de l'aplicació amb la informació de l'usuari seleccionat,
-cosa que permet que altres components accedeixin a aquesta informació i n'actualitzin el contingut en conseqüència.
+When an action is sent to the Redux store, the global state of the application is updated with the selected user's information,
+This allows other components to access this information and update the content accordingly.
 ```
 
 ## Input.jsx
@@ -374,15 +373,15 @@ cosa que permet que altres components accedeixin a aquesta informació i n'actua
 ### ref()
 
 ```js
-ref() -> La funció ref() és una funció proporcionada pel Firebase Storage que retorna una referència a un objecte d'emmagatzematge específic.
-En aquest cas, ref() pren dos arguments: el primer és l'objecte d'emmagatzematge del Firebase i el segon és el nom del fitxer que voleu crear.
-El nom del fitxer és generat aleatòriament usant la funció uuid(), que torna un UUID (identificador únic universal) en forma de cadena.
+ref() -> The ref() function is a function provided by Firebase Storage that returns a reference to a specific storage object.
+In this case, ref() takes two arguments: the first is the Firebase Storage object and the second is the name of the file you want to create.
+The file name is randomly generated using the uuid() function, which returns a UUID (universally unique identifier) as a string.
 ```
 
 ### uploadBytesResumable()
 
 ```js
-Pren dos arguments: el primer és la referència a l'objecte d'emmagatzematge que es vol carregar (en aquest cas, storageRef) i el segon és un
-objecte Blob o File que conté els bytes de les dades que es carregaran. En aquest cas, l'objecte Blob o File es proporciona com a valor de
-la variable img.
+It takes two arguments: the first one is the reference to the storage object to be loaded (in this case, storageRef) and the second one is a
+Blob object containing the bytes of the data to be loaded. In this case, the Blob object is provided as the value of the
+the img variable.
 ```

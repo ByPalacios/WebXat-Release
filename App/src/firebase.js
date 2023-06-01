@@ -5,17 +5,17 @@ import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyBJycqXzQUIC4ZhphEYXjSXJe051bBX45g",
+  apiKey: "apiKey",
 
-  authDomain: "ruinett-8f847.firebaseapp.com",
+  authDomain: "authDomain",
 
-  projectId: "ruinett-8f847",
+  projectId: "projectId",
 
-  storageBucket: "ruinett-8f847.appspot.com",
+  storageBucket: "storageBucket",
 
-  messagingSenderId: "508876173731",
+  messagingSenderId: "messagingSenderId",
 
-  appId: "1:508876173731:web:cf29bf3372b93c4cf3ea16"
+  appId: "appId"
 
 };
 
