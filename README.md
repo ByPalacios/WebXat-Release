@@ -167,8 +167,8 @@ function EjemploComponente() {
 
 ```js
 In this example, we are using useState() to add state to a functional component called ExempleComponent.
-The array returned contains two elements: count, which is the current value of the state (initialized to 0) and setCount,
-which is a function used to update the value of count.
+The array returned contains two elements: count, which is the current value of the state
+(initialized to 0) and setCount, which is a function used to update the value of count.
 
 When the user clicks the button, we trick setCount() and pass it the new count value (which is count + 1).
 This updates the state and causes React to re-render the component with the new count value.
@@ -385,7 +385,8 @@ This allows other components to access this information and update the content a
 ref() -> The ref() function is a function provided by Firebase Storage that returns a reference
 to a specific storage object. In this case, ref() takes two arguments: the first is the
 Firebase Storage object and the second is the name of the file you want to create. The file name
-is randomly generated using the uuid() function, which returns a UUID (universally unique identifier) as a string.
+is randomly generated using the uuid() function, which returns a UUID
+(universally unique identifier) as a string.
 ```
 
 ### uploadBytesResumable()
